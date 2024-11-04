@@ -10,7 +10,7 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      description: 'This is to help know where the content will be placed',
+      description: 'Title of the expandable content section',
     }),
     defineField({
       name: 'backgroundImage',
