@@ -1,4 +1,4 @@
-import {defineCliConfig} from 'sanity/cli'
+import { defineCliConfig } from 'sanity/cli';
 
 export default defineCliConfig({
   api: {
@@ -10,6 +10,15 @@ export default defineCliConfig({
    * Learn more at https://www.sanity.io/docs/cli#auto-updates
    */
   autoUpdates: true,
+  vite: config => {
+    return {
+      ...config,
+      build: {
+        ...config.build,
+        target: 'esnext',
+      },
+    };
+  },
   /**
    * The name of the studio host.
    * Learn more at https://www.sanity.io/docs/cli#studio-host
