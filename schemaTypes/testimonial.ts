@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'testimonial',
@@ -15,5 +15,17 @@ export default defineType({
       title: 'Author',
       type: 'string',
     }),
-  ]
+    defineField({
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+    }),
+  ],
+  orderings: [
+    {
+      title: 'Order',
+      name: 'orderAsc',
+      by: [{field: 'order', direction: 'asc'}],
+    },
+  ],
 })
