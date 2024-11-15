@@ -7,5 +7,17 @@ import fullCta from './fullCta'
 import home from './home'
 import post from './post'
 import testimonial from './testimonial'
+import contactQuestion from './contactQuestion'
 
-export const schemaTypes = [post, author, category, blockContent, home, fullCta, testimonial, expandContent, expandContentList]
+export const schemaTypes = [
+  post,
+  author,
+  category,
+  blockContent,
+  home,
+  fullCta,
+  testimonial,
+  expandContent,
+  expandContentList,
+  contactQuestion,
+]
