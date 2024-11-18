@@ -10,6 +10,7 @@ import fullCta from './fullCta'
 import home from './home'
 import logoList from './logoList'
 import post from './post'
+import quote from './quote'
 import testimonial from './testimonial'
 
 export const schemaTypes = [
@@ -26,4 +27,5 @@ export const schemaTypes = [
   contactQuestion,
   employeeList,
   employee,
+  quote,
 ]
