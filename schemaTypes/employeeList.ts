@@ -1,9 +1,8 @@
 import { defineField, defineType } from 'sanity';
 
 export default defineType({
-  name: 'logoList',
-  title: 'Logo List',
-  description: 'Images to be used together as a list of logos',
+  name: 'employeeList',
+  title: 'Employee List',
   type: 'document',
   fields: [
     defineField({
@@ -12,10 +11,10 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'logos',
-      title: 'Logos',
+      name: 'employees',
+      title: 'Employees',
       type: 'array',
-      of: [{type: 'image'}],
+      of: [{type: 'employee'}],
     })
   ],
   preview: {
