@@ -61,6 +61,16 @@ export default defineType({
       type: 'blockContent',
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'textColor',
+      title: 'Text Color',
+      type: 'color',
+    }),
+    defineField({
+      name: 'backgroundColor',
+      title: 'Background Color',
+      type: 'color',
+    }),
   ],
 
   preview: {

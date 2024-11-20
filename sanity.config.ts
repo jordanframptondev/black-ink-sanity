@@ -1,7 +1,8 @@
-import { visionTool } from '@sanity/vision'
-import { defineConfig } from 'sanity'
-import { structureTool } from 'sanity/structure'
-import { schemaTypes } from './schemaTypes'
+import {visionTool} from '@sanity/vision'
+import {defineConfig} from 'sanity'
+import {structureTool} from 'sanity/structure'
+import {colorInput} from '@sanity/color-input'
+import {schemaTypes} from './schemaTypes'
 
 const {theme} = (await import(
   // @ts-expect-error -- TODO setup themer.d.ts to get correct typings
@@ -15,7 +16,7 @@ export default defineConfig({
   projectId: 'yl9xajmz',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [structureTool(), visionTool(), colorInput()],
 
   theme,
 
@@ -24,8 +25,6 @@ export default defineConfig({
   },
 
   studio: {
-    components: {
-
-    }
-  }
+    components: {},
+  },
 })
