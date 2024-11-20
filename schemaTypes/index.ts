@@ -12,6 +12,7 @@ import logoList from './logoList'
 import post from './post'
 import quote from './quote'
 import testimonial from './testimonial'
+import SlugInputComponent from './SlugInputComponent'
 
 export const schemaTypes = [
   post,

@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import SlugInputComponent from './SlugInputComponent'
 
 export default defineType({
   name: 'post',
@@ -18,6 +19,9 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
+      components: {
+        input: SlugInputComponent,
+      },
     }),
     defineField({
       name: 'author',
@@ -26,18 +30,20 @@ export default defineType({
       to: {type: 'author'},
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'thumbnailImage',
+      title: 'Thumbnail image',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      name: 'mainImage',
+      title: 'Main image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: 'publishedAt',
