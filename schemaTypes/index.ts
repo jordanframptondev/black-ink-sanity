@@ -1,4 +1,3 @@
-import author from './author'
 import blockContent from './blockContent'
 import category from './category'
 import contactQuestion from './contactQuestion'
@@ -16,7 +15,6 @@ import SlugInputComponent from './SlugInputComponent'
 
 export const schemaTypes = [
   post,
-  author,
   category,
   blockContent,
   home,

@@ -26,8 +26,7 @@ export default defineType({
     defineField({
       name: 'author',
       title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
+      type: 'string',
     }),
     defineField({
       name: 'thumbnailImage',
@@ -60,12 +59,12 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
+      author: 'author', // Use the 'author' string field directly
       media: 'mainImage',
     },
     prepare(selection) {
       const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
+      return {...selection, subtitle: author ? `by ${author}` : ''}
     },
   },
 })
