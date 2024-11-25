@@ -6,11 +6,6 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    }),
-    defineField({
       name: 'employees',
       title: 'Employees',
       type: 'array',
@@ -18,8 +13,12 @@ export default defineType({
     })
   ],
   preview: {
-    select: {
-      title: 'title',
+    prepare() {
+        const title = 'Employee List'
+        return {
+            title,
+            subtitle: 'Employee List with display text and image',
+        }
     },
   },
 })

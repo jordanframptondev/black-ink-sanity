@@ -7,12 +7,6 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-      description: '[not shown to users] Helper field to identify',
-    }),
-    defineField({
       name: 'logos',
       title: 'Logos',
       type: 'array',
@@ -20,8 +14,10 @@ export default defineType({
     })
   ],
   preview: {
-    select: {
-      title: 'title',
+    prepare() {
+        return {
+            title: 'Client Logo Carousel',
+        }
     },
   },
 })
