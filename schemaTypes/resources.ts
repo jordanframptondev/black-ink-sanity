@@ -2,8 +2,8 @@ import {defineField, defineType} from 'sanity'
 import SlugInputComponent from './SlugInputComponent'
 
 export default defineType({
-  name: 'post',
-  title: 'Post',
+  name: 'resources',
+  title: 'Resources',
   type: 'document',
   fields: [
     defineField({

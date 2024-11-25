@@ -1,8 +1,8 @@
 import { defineField, defineType } from 'sanity';
 
 export default defineType({
-  name: 'logoList',
-  title: 'Logo List',
+  name: 'clientLogoCarousel',
+  title: 'Client Logo Carousel',
   description: 'Images to be used together as a list of logos',
   type: 'document',
   fields: [
@@ -10,6 +10,7 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      description: '[not shown to users] Helper field to identify',
     }),
     defineField({
       name: 'logos',
