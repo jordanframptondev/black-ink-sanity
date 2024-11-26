@@ -1,6 +1,6 @@
 import aboutQuote from './aboutQuote'
 import blockContent from './blockContent'
-import careerQuote from './careerQuote'
+import careersQuote from './careersQuote'
 import logoList from './clientLogoCarousel'
 import contactQuestion from './contactQuestion'
 import employee from './employee'
@@ -23,7 +23,7 @@ export const schemaTypes = [
   employeeList,
   employee,
   aboutQuote,
-  careerQuote,
+  careersQuote,
   services,
   ethos,
   partners,

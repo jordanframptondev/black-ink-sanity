@@ -1,8 +1,8 @@
 import { defineField, defineType } from 'sanity';
 
 export default defineType({
-  name: 'careerQuote',
-  title: 'Career Quote',
+  name: 'careersQuote',
+  title: 'Careers Quote',
   type: 'document',
   fields: [
     defineField({
@@ -14,7 +14,7 @@ export default defineType({
   preview: {
     prepare() {
         return {
-            title: 'Career Quote',
+            title: 'Careers Quote',
         }
     },
   },
