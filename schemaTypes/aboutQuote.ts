@@ -1,15 +1,10 @@
 import { defineField, defineType } from 'sanity';
 
 export default defineType({
-  name: 'quote',
-  title: 'Quote',
+  name: 'aboutQuote',
+  title: 'About Quote',
   type: 'document',
   fields: [
-    defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    }),
     defineField({
       name: 'quote',
       title: 'Quote',
@@ -17,8 +12,10 @@ export default defineType({
     }),
   ],
   preview: {
-    select: {
-      title: 'title',
+    prepare() {
+        return {
+            title: 'About Quote',
+        }
     },
   },
 })
