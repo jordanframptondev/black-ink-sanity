@@ -8,14 +8,15 @@ import employeeList from './employeeList'
 import ethos from './ethos'
 import expandContent from './expandContent'
 import partners from './partners'
-import post from './resources'
+import post from './post'
 import services from './services'
 import testimonial from './testimonial'
-
+import testimonials from './testimonials'
 
 export const schemaTypes = [
   post,
   blockContent,
+  testimonials,
   testimonial,
   expandContent,
   logoList,
